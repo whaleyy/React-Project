@@ -9,8 +9,6 @@ class App extends React.Component {
 
   componentDidMount() {
     this.setState({ avatarA: faker.image.avatar() });
-    // const avatarB = faker.image.avatar();
-    // const avatarC = faker.image.avatar();
   }
 
   render() {
@@ -21,7 +19,7 @@ class App extends React.Component {
             author="Sam"
             date="Today is at 5:00PM"
             text="that is awesome!"
-            avatar={this.state.avatarA}
+            avatar={faker.image.avatar()}
           />
         </ApprovalCard>
         <ApprovalCard>
